@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/lightbox.min.css">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title> LetsGrowMore Task1</title>
+
+</head>
+
+<body onload="slider()">
+    <div class="banner">
+        <div class="slider">
+            <img src="images/img1.jpg" alt="" id="slider1">
+        </div>
+        <div class="over">
+            <div id="navbar">
+                <div class="logo">
+                    <h1>ZIPPY</h1>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li class="item"><a href="#home">Home</a></li>
+                        <li class="item"><a href="#project">Project</a></li>
+                        <li class="item"><a href="#princing">Pricing</a></li>
+                        <li class="item"><a href="#teamsection">Team</a></li>
+                        <li class="item"><a href="#blog">Blog</a></li>
+                        <li class="item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <h1>One page promising to fill all your needs!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit. possimus harum?</p>
+                <div class="button">
+                    <button class="btn">Learn More</button>
+                    <button class="btn-1">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slider1 = document.getElementById("slider1");
+        var images = new Array(
+            "images/img1.jpg",
+            "images/img2.jpg",
+            "images/img3.jpg"
+
+        );
+        var len = images.length;
+        var i = 0;
+
+        function slider() {
+            if (i > len - 1) {
+                i = 0;
+            }
+            slider1.src = images[i];
+            i++;
+            setTimeout('slider()', 4000);
+        }
+    </script>
+    <section id="home">
+        <div class="wel">
+            <h1 class="h-primary">
+                Welcome to Zippy
+            </h1>
+            <p>This is Photoshop's version of Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat autem
+                ullam amet recusandae optio!</p>
+            <img src="images/un.jpeg" alt="">
+        </div>
+    </section>
+    <div id="box">
+        <div class="card">
+            <img src="images/icon1.png" alt="">
+            <h2 class="h-secondary">LOREM IPSUM</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet alias totam eum
+                cupiditate rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita.</p>
+            <button class="btn1">Learn More</button>
+        </div>
+        <div class="card">
+            <img src="images/icon2.png" alt="">
+            <h2 class="h-secondary">DOLOR SIT</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet alias totam eum
+                cupiditate rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita.</p>
+            <button class="btn1">Learn More</button>
+        </div>
+        <div class="card">
+            <img src="images/icon3.png" alt="">
+            <h2 class="h-secondary">CONSECTETURE</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet alias totam eum
+                cupiditate rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita.</p>
+            <button class="btn1">Learn More</button>
+        </div>
+    </div>
+    <section id="project">
+        <div id="head">
+            <h1 class="h-primary">Projects
+            </h1>
+        </div>
+        <div id="project-section">
+            <div class="project-box">
+                <div class="project-1" id="box1">
+                    <img src="images/p1.jpg" alt="">
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, corporis enim. Magnam totam
+                        velit
+                        qui recusandae officiis</p>
+                    <button class="btn3">LAUNCH CASE STUDY</button>
+                </div>
+                <div class="project-1" id="box2">
+                    <img src="images/p2.jpg" alt="">
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, corporis enim. Magnam totam
+                        velit
+                        qui recusandae officiis</p>
+                    <button class="btn3">LAUNCH CASE STUDY</button>
+                </div>
+                <div class="project-1" id="box3">
+                    <img src="images/p3.jpg" alt="">
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, corporis enim. Magnam totam
+                        velit
+                        qui recusandae officiis.</p>
+                    <button class="btn3">LAUNCH CASE STUDY</button>
+                </div>
+                <div class="project-1" id="box4">
+                    <img src="images/p5.jpg" alt="">
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, corporis enim. Magnam totam
+                        velit
+                        qui recusandae officiis.</p>
+                    <button class="btn3">LAUNCH CASE STUDY</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="princing">
+        <div class="pricing">
+            <h1 class="h-primary">Princing Table</h1>
+        </div>
+        <div id="pricing-section">
+            <div class="table" id="box-1">
+                <ul>
+                    <li class="head">STANDARD PLAN</li>
+                    <li class="list">Free</li>
+                    <li>2GB Available</li>
+                    <li>15 Max Contact</li>
+                    <li>Ongoing Ads</li>
+                    <li> 30 Domains</li>
+                    <li><button class="btn4">BUY</button></li>
+                </ul>
+            </div>
+            <div class="table" id="box-2">
+                <ul>
+                    <li class="head"> BUSINESS PLAN</li>
+                    <li class="list">19$/Month</li>
+                    <li>10 GB Available</li>
+                    <li> 75 Max contact</li>
+                    <li>120 Domain</li>
+                    <li>Free Ads</li>
+                    <li> <button class="btn4">BUY</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="table" id="box-3">
+                <ul>
+                    <li class="head">PREMIMUM PLAN</li>
+                    <li class="list">14$/Month</li>
+                    <li>100GB</li>
+                    <li>Unlimited Contact</li>
+                    <li>Unlimited Domain</li>
+                    <li>Ads Free</li>
+                    <li> <button class="btn4">BUY</button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h1 class="h-primary">Video Projects</h1>
+        <video src="images/vid1.mp4" width="550" height="500" controls autoplay></video>
+        <video src="images/vid2.mp4" width="550" height="500" controls autoplay></video>
+        <video src="images/vid3.mp4" width="550" height="500" controls autoplay></video>
+    </div>
+    <section id="teamsection">
+        <h1 class="h-primary">Zippy Team</h1>
+        <div id="team">
+            <div class="team-item">
+                <img src="images/team1.jpg" alt="Teams">
+                <h3>David Jenkins</h3>
+                <h5>Senior Developer</h5>
+                <ul class="media">
+                    <a href="#">
+                        <li><i class="fab fa-facebook"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-twitter"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-linkedin"></i></li>
+                    </a>
+                </ul>
+            </div>
+            <div class="team-item">
+                <img src="images/team2.jpg" alt="Our Teams">
+                <h3>Jessica Williams</h3>
+                <h5>Art Director</h5>
+                <ul class="media">
+                    <a href="#">
+                        <li><i class="fab fa-facebook"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-twitter"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-linkedin"></i></li>
+                    </a>
+                </ul>
+            </div>
+            <div class="team-item">
+                <img src="images/team3.jpg" alt="Our Teams">
+                <h3>Alice Timmons</h3>
+                <h5>SEO Monster</h5>
+                <ul class="media">
+                    <a href="#">
+                        <li><i class="fab fa-facebook"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-twitter"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-linkedin"></i></li>
+                    </a>
+                </ul>
+            </div>
+            <div class="team-item">
+                <img src="images/team6.jpg" alt="Our Teams">
+                <h3>Laura Thomas</h3>
+                <h5>Marketing Manager</h5>
+                <ul class="media">
+                    <a href="#">
+                        <li><i class="fab fa-facebook"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-twitter"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-linkedin"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="life">
+            <h1 class="h-primary">Life in Zippy</h1>
+            <div class="company">
+                <a href="images/company.jpg" data-lightbox="mycompany"><img src="images/company small.jpg" alt=""></a>
+            </div>
+            <div class="gallery">
+                <a href="images/pic1.jpg" data-lightbox="mygallery"><img src="images/g1 small (Copy).jpg" alt=""></a>
+                <a href="images/pic2.jpg" data-lightbox="mygallery"><img src="images/g2 small (Copy).jpg" alt=""></a>
+                <a href="images/pic3.jpg" data-lightbox="mygallery"><img src="images/g3 small (Copy).jpg" alt=""></a>
+                <a href="images/pic4.jpg" data-lightbox="mygallery"><img src="images/g4 small (Copy).jpg" alt=""></a>
+                <a href="images/pic5.jpg" data-lightbox="mygallery"><img src="images/g5 small (Copy).jpg" alt=""></a>
+                <a href="images/pic6.jpg" data-lightbox="mygallery"><img src="images/g6 small (Copy).jpg" alt=""></a>
+                <a href="images/pic7.jpg" data-lightbox="mygallery"><img src="images/g7 small (Copy).jpg" alt=""></a>
+                <a href="images/pic8.jpg" data-lightbox="mygallery"><img src="images/g8 small (Copy).jpg" alt=""></a>
+                <a href="images/pic9.jpg" data-lightbox="mygallery"><img src="images/g9 small (Copy).jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="body">
+            <h1 class="h-primary">Newsletter Signup</h1>
+            <div class="signup">
+                <input type="text" name="" id="name" placeholder="abc@example.com">
+                <button class="btns">Signup</button>
+                <button class="btns">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="blog">
+        <div class="blog">
+            <h1 class="h-primary">Blog</h1>
+            <div id="blog-1">
+                <div class="blog1">
+                    <img src="images/blog1.jpg" alt="">
+                    <h2 class="h-secondary">LOREM IPSUM DOLOR SIT AMET</h2>
+                    <h4>15 June,2015</h4>
+                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet alias totam eum
+                        cupiditate rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita.</p>
+                    <button class="btn1">Read More</button>
+                </div>
+                <div class="blog1">
+                    <img src="images/blog2.jpg" alt="">
+                    <h2 class="h-secondary">LOREM IPSUM DOLOR SIT AMET</h2>
+                    <h4>15 June,2015</h4>
+                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet alias totam eum
+                        cupiditate rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita.</p>
+                    <button class="btn1">Read More</button>
+                </div>
+                <div class="blog1">
+                    <img src="images/blog3.jpg" alt="">
+                    <h2 class="h-secondary">LOREM IPSUM DOLOR SIT AMET</h2>
+                    <h4>15 June,2015</h4>
+                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet alias totam eum
+                        cupiditate rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita.</p>
+                    <button class="btn1">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224153.0945017856!2d77.04065603018132!3d28.618008248481257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd3e911ea45f%3A0xe0cf33ccc2da2bbe!2sNew%20Delhi!5e0!3m2!1sen!2sin!4v1628672389838!5m2!1sen!2sin"
+                    width="890" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="form">
+                    <h1>Contact</h1>
+                    <form action="backend.php">
+                        <label for="name">Name</label>
+                        <input type="text">
+                        <label for="email">Email</label>
+                        <input type="email">
+                        <label for="subject">Subject</label>
+                        <input type="text">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                        <button type="button">send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="about">
+            <div class="left-box">
+                <h3 class="topic">Office Address</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="middle-box">
+                <h3 class="topic">Follow Us</h3>
+                <form action="#">
+                    <div class="icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </form>
+            </div>
+            <div class="right-box">
+                <h3 class="topic">Contact Us</h3>
+                <div class="phone">
+                    <a href="#"><i class="fas fa-phone-volume"></i>197-6343-493</a>
+                </div>
+                <div class="email">
+                    <a href="#"><i class="fas fa-envelop"></i>Zippy12@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="center">
+            copyright &copy; www.zippy.com. All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
